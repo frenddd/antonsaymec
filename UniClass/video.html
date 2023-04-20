@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Un1Class: classroom</title>
+        <link rel="stylesheet" href="css\clasa9.css">
+    </head>
+<body class="body"> 
+    <div class="sidenav">
+        <a href="index.html"> 
+            <img  class="logo" src="imagini\logo.png" width="130px"></a>
+        <div class="">  
+        </div>
+       <div class="links">
+        <a href="index.html">Home</a>
+        
+        <a href="Catalogue.html">Catalogue</a>
+            </div>
+      </div>
+   <center>
+
+    
+    <div id="basic" style="text-align:center;">
+        <video class="videostream" autoplay="" controls></video>
+        <audio class="audiostream" autoplay=""></audio>
+        <p>
+          <button class="capture-button">Turn camera on</button>
+          <button id="stop-button">Turn camera off</button>
+        </p>
+      </div>
+    </center>
+      <center>
+            <script>
+                (function() {
+  
+  const video = document.querySelector('#basic video');
+  const audio = document.querySelector('#basic audio');
+  
+  const captureVideoButton = document.querySelector('#basic .capture-button');
+  const stopVideoButton = document.querySelector('#basic #stop-button');
+  
+  //Capture Video
+  captureVideoButton.onclick = function() {
+     navigator.mediaDevices.getUserMedia({
+      audio: true,
+      video: true
+    })
+    .then(stream => {
+      window.localStream = stream;
+      video.srcObject = stream;
+      audio.srcObject = stream;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  };
+  
+  stopVideoButton.onclick = function() {
+    localStream.getVideoTracks()[0].stop();
+    video.src = '';
+    
+    localStream.getAudioTracks()[0].stop();
+    audio.src = '';
+  };
+});
+                </script>
+   </center>
+
+</body>
+</html>

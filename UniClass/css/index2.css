@@ -1,0 +1,155 @@
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    border: 2PX;
+    margin-left: 2%;
+    margin-right: 2%;
+    gap: 40px;
+    margin-left:240px;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    font-family: 'Verdana', sans-serif;
+    font-size:18px;
+  
+  }
+  .parte{
+   
+    padding: 20px 30px;
+    background-color: rgb(42, 162, 154);
+    border-radius: 25px;
+    border: 2px solid;
+    width: 300px;
+    margin-bottom: 4%;
+    
+  }
+  .joinclass{
+    width: 200px; 
+    height: 50px; 
+      color: rgb(0, 0, 0);   
+      padding: 10px;   
+      margin: 10px 10px;   
+      border: 1;   
+      cursor: pointer;
+      font-size: 12pt;
+      border-radius: 12px;
+      transition: 0.3s;
+      background-color: #40dccf;
+    
+  }
+  .joinclass:hover{
+    background-color: #44bdb3;
+    
+  }
+  body{
+    background-image: url("131311-green-polygon-background-design.jpg");
+    background-attachment: fixed;
+  }
+  
+  .logo{
+  padding-left:2px;
+  
+  }
+  
+  .sidenav {
+    height: 100%; 
+    width: 190px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color:  rgba(118, 118, 118, 0.426); 
+    overflow-x: hidden; 
+    padding-top: 20px;
+    padding-left: 12px;
+  box-shadow: 10px 0px 60px;
+  transition: 0.3s;
+    
+  }
+  
+  .sidenav a {
+  
+    padding: 6px 8px 6px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(67, 44, 144, 50);
+    display: flex;
+    transition: 900ms;
+  }
+  
+  
+  .sidenav a:hover {
+    color: rgb(67, 44, 204);
+    
+  }
+  
+  .links{
+    text-align: center;
+    margin-right: 0%;
+    bottom: 5%;
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+  } 
+  
+  
+  
+  
+  .imgprof{
+     border-radius: 50%;
+     height: 50px;
+      overflow: hidden;
+      border: 1px solid black;
+  }
+  
+  .cutie{
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .text{
+   font-family: 'Roboto Serif', serif;
+  
+  }
+  
+ 
+  .text2{
+    display: flex;
+    gap: 5px;
+  }
+  
+  #slide {
+    position: relative;
+    left: -30px;
+    width: 300px;
+    animation: slide 0.5s forwards;
+   
+  }
+  #slide2 {
+    position: relative;
+    left: -30px;
+    width: 300px;
+    animation: slide 0.5s forwards;
+   animation-delay: 0.1s;
+  }
+  
+  #slide3 {
+    position: relative;
+    left: -30px;
+    width: 300px;
+    animation: slide 0.5s forwards;
+    animation-delay: 0.2s;
+  }
+  #slide4 {
+    position: relative;
+    left: -30px;
+    width: 300px;
+    animation: slide 0.5s forwards;
+    animation-delay: 0.3s;
+  }
+
+  
+  @keyframes slide {
+    100% { left: 0; }
+  }
+  

@@ -1,0 +1,88 @@
+.body{
+    
+    background-image: url("131311-green-polygon-background-design.jpg");
+
+}
+
+#basic {
+background: #000;
+border: 1px solid #ccc;
+width: 400px;
+height: 300px;
+margin-top: 150px;
+
+}
+
+
+video, #cssfilters-video, #screenshot-img {
+  width: 400px;
+  height: 300px;
+ 
+}
+audio, canvas, video {
+  display: inline-block;
+}
+
+button {
+  background: #333;
+  color: #FFF;
+  border-radius: 4px;
+  border: 0;
+  padding: 10px 14px;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  
+}
+button, input {
+  line-height: normal;
+}
+body{
+background-image: url("131311-green-polygon-background-design.jpg");
+background-attachment: fixed;
+}
+
+.logo{
+padding-left:2px;
+
+}
+
+.sidenav {
+height: 100%; 
+width: 190px; 
+position: fixed; 
+z-index: 1; 
+top: 0; 
+left: 0;
+background-color:  rgba(118, 118, 118, 0.426); 
+overflow-x: hidden; 
+padding-top: 20px;
+padding-left: 12px;
+box-shadow: 10px 0px 60px;
+
+}
+
+.sidenav a {
+
+padding: 6px 8px 6px 20px;
+text-decoration: none;
+font-size: 25px;
+color: rgba(67, 44, 144, 50);
+display: flex;
+transition: 900ms;
+}
+
+
+.sidenav a:hover {
+color: rgb(67, 44, 204);
+
+}
+
+.links{
+text-align: center;
+margin-right: 0%;
+bottom: 5%;
+position: absolute;
+font-family: 'Nunito', sans-serif;
+} 

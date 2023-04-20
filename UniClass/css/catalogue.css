@@ -1,0 +1,114 @@
+
+
+.titlu{
+    font-family: 'Nunito', sans-serif;
+    color: rgb(68, 44, 145);
+    margin-bottom: 50px;
+    margin-left:11% ;
+    font-size:xxx-large;
+} 
+
+
+.box{
+    border: 2cm dashed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2PX;
+    margin-left: 2%;
+    margin-right: 2%;
+    gap: 3%;
+    margin-left:240px;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+    font-size:18px;
+    
+  
+}
+.parte{
+    border: 2px solid;
+    width: 300px;
+    margin-bottom: 4%;
+    background-color:  rgba(118, 118, 118, 0.426); 
+    border-radius: 12px;
+    transition: 1s;
+
+}.fain,.mod{
+    border: 2px solid;
+    
+    
+   
+}
+.subj,.note,.abs{
+    
+    border-bottom: 2px solid black;
+}
+
+
+.notes{
+    border-top: 2px solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.note,.date{
+   
+    border-right:2px solid;
+}
+
+.date{
+    height: 300px;
+    
+}
+
+body{
+    background-image: url("131311-green-polygon-background-design.jpg");
+    background-attachment: fixed;
+}
+
+.logo{
+  padding-left:2px;
+
+}
+
+.sidenav {
+    height: 100%; 
+    width: 190px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color:  rgba(118, 118, 118, 0.426); 
+    overflow-x: hidden; 
+    padding-top: 20px;
+    padding-left: 12px;
+box-shadow: 10px 0px 60px;
+    
+  }
+  
+  .sidenav a {
+
+    padding: 6px 8px 6px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(67, 44, 144, 50);
+    display: flex;
+    transition: 900ms;
+  }
+  
+ 
+  .sidenav a:hover {
+    color: rgb(67, 44, 204);
+    
+  }
+
+.links{
+    text-align: center;
+    margin-right: 0%;
+    bottom: 5%;
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+} 
