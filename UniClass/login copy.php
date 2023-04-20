@@ -35,3 +35,54 @@
 </div></center>
 </body>
     </html>
+<?php
+session_start();
+include "bazadedate.php";
+
+if(isset($_POST['Name'])&&isset($_POST['Pass'])){
+    function validate($data){
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars(($data));
+        return data;
+    }
+}
+
+$Uname =validate($_POST['Name']);
+$Pass = validate($_POST['Pass']);
+
+if(empty($Uname)){
+    header("Location:index.php?err=User Name trebe");
+    exit();
+}
+else if(empty($Pass)){
+    header("Location:index.php?err=Password trebe");
+    exit();
+}
+
+
+    $sql = "SELECT * FROM `info` WHERE LogUser='$Uname' AND LogPass='$Pass'";
+
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result)===1){
+$row = mysqli_fetch_assoc($result);
+if($row['LogUser']===$Uname && $row['LogPass']===$pass){
+echo "login";
+$_SESSION['Name'] = $row['Name'];
+$_SESSION['name'] = $row['name'];
+$_SESSION['id'] = $row['id'];
+header("Location:index copy.php");
+exit();
+
+    }
+    else{
+        header("Location:index.php?err=Nu e bun");
+        exit();
+    }
+}
+else{
+    header("Location:index.php");
+    exit();
+}
+?>
