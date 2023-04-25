@@ -3,8 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/imagini/logo.png">
-    <title>ClassOne</title>
+    <title>Un1Class: Sign Up</title>
     <link rel="stylesheet" href="css\createaccount.css">
     <!--<link rel="script" href="js\cont.js">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,21 +14,21 @@
 <body class="body">
     <!--Logoul si butonul de sign in/up-->
     <div class="head">
-        <div class="logo"><a href="index.html"><img src="\imagini\logo.png" width="130px"></a></div>
+        <div class="logo"><a href="createaccount.html"><img src="\imagini\logo.png" width="130px"></a></div>
         <div class="sign"></div>
     </div>
     <!--Cadranul de informatii-->
-    <center>
+    <center><form action="createacc.php" method="post">
     <span class="titlu">Create an account</span><br>
     <span class="text">Complete the fields below in order to create an account.</span><br><br>
    <div class="chenar" center>
-    <div> <input name="fname" class="box" type="text" placeholder="First name" name="firstname"></div>
+    <div> <input name="fname" class="box" type="text" placeholder="First name" name="firstname" required></div>
   
   
-    <div><input name="lnume" id="fnume" class="box" type="text" placeholder="Last name" name="lastname"></div>
-     <div><input id="mail" class="box" type="text" placeholder="E-mail" name="email"></div>
-     <div><input name="pass" class="box" type="password" placeholder="Password" name="password"></div>
-     <div><input name="vpass" class="box" type="password" placeholder="Verify password" name="verpass"></div>
+    <div><input name="lname" id="fnume" class="box" type="text" placeholder="Last name" required></div>
+     <div><input id="email" class="box" type="email" placeholder="E-mail" name="email" required></div>
+     <div><input name="password" class="box" type="password" placeholder="Password" required ></div>
+     <div><input name="vpass" class="box" type="password" placeholder="Verify password" required></div>
      <div>
         <select name="clasa" class="combo">
             <option value="clasa9">IX</option>
@@ -38,12 +37,12 @@
             <option value="clasa12">XII</option>
         </select>
             </div>
-     <div><a href=index.html><button value="Sign Up" id="myButton" class="buton">Create account</button></a></div>
+     <div><input type="submit" class="buton" value="Create account" name=""></div>
         
 
     <div>
         <span class="text2">Already have an account? <a href="login.html">Click here!</a></span>
-    </div></div>
+    </div></div></form>
 </center>
 </body>
 </html>

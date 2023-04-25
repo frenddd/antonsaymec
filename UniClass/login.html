@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Caesar Dressing' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="/imagini/logo.png">
-    <title>ClassOne</title>
+    <title>Un1Class: Sign In</title>
 </head>
 <Body class="body">
     <!--Logoul si butonul de sign in/up-->
@@ -20,17 +19,17 @@
         <div class="logo"><a href=index.html><img src="imagini\logo.png" width="130px"></a></div>
         <div class="sign"></div>
     </div>
-    <center>
+    <center><form action="login.php" method="post">
         <!--Cadranul de informatii-->
     
     <div><span id="slideup" class="login">Sign In</span></div><br>
-    <div class="patrat" center>
+    <div class="patrat">
 
 <div>
-<div><input class="input" type="text" placeholder="E-mail"></div>
-<div><input class="input" type="password" placeholder="Password"></div>
-<div><a href="index.html"><button class="buton">Sign in</button></a></div>
-
+<div><input class="input" type="email" placeholder="E-mail" id="email" name="email" required></div>
+<div><input class="input" type="password" placeholder="Password" id="password" name="password" required></div>
+<div><input type="submit" class="buton" value="Login" name=""></div>
+</form>
 </div>
 <div><span class="already"> Don't have an account? <a href="createaccount.html">Click here to create one!</a></span></div>
 </div></center>
